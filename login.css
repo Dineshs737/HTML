@@ -1,0 +1,56 @@
+
+:root{
+    --white:whitesmoke;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    background:linear-gradient(to right,#e2e2e2,#c9d6ff)
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.login label{
+    display: block;
+    margin-bottom:.2em;
+}
+
+.login input{
+    margin-bottom: .2em;
+    border:none;
+    border-bottom: 1px solid black;
+    padding:5px;
+    width:25vw;
+    /* border-radius:5px; */
+    background-color: inherit;
+}
+
+.login input:focus{
+    background-color: transparent;
+    outline:transparent;
+
+    
+}
+.submit button{
+
+    margin-top:20px;
+    width:20vw;
+    padding:5px;
+    border:1px solid whitesmoke;
+    border-radius:5px;
+    font-size:1em
+}
