@@ -29,8 +29,64 @@ header a{
 
 header{
     display:flex;
+    padding:1em;
 
 }
 #logo{
     flex:3;
+    font-size:1.25em;
+}
+nav{
+    flex:2;
+    display:flex;
+}
+
+nav a{
+    flex:1;
+}
+
+click_button{
+    color:var(--green);
+    font-size:1.5em;
+    
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content:center;
+    padding:2em;
+}
+
+.tagline1{
+    color:var(--red);
+    font-size:2.5em;
+    font-weight:bolder;
+    
+}
+
+.tagline2{
+    color:var(--yellow);
+    /* font-size:2.5em; */
+    /* font-weight:bolder; */
+    
+}
+
+.maintext div{
+    margin-top:1.5em;
+
+}
+
+.maintext button{
+    margin-top: 1.5em;
+    background-color:var(--green);
+
+    width:20vh;
+    height:4vh;
+    border-radius:.6em;
+    border:1px solid var(--green);
+    color:var(--white);
+    padding:.7em;
+    font-weight:bold;
 }
