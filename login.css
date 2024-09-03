@@ -54,3 +54,10 @@ body{
     border-radius:5px;
     font-size:1em
 }
+
+.click_button{
+    background-color: aqua;
+    width:30vw;
+    padding:8px;
+    margin-top:25px;
+}

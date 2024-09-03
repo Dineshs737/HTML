@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+#login{
+    position:relative;
+    padding:10px 20px;
+    background-color:black;
+    border:1px solid black;
+    color:whitesmoke;
+    font-size:18px;
+    font-weight:400;
+    border-radius: 6px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+    transition:transform .2s ease;
+}
+
+
+#login:active{
+    transform: scale(0.96);
+}
+
+#login::before,
+#login::after{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:150%;
+    border:2px solid red;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#login::before{
+    top:-70%;
+}
+
+#login::after{
+    bottom:-70%;
+}

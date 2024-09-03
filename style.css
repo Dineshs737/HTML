@@ -11,6 +11,7 @@
     padding:0;
     font-family:Arial, Helvetica, sans-serif;
     text-transform:capitalize;
+    box-sizing: border-box;
 }
 
 .landing{
@@ -89,4 +90,32 @@ click_button{
     color:var(--white);
     padding:.7em;
     font-weight:bold;
+}
+
+.menu{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; */
+    background:rgba(100,100,100,.8);
+    color:var(--white);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+ 
+    
+    height:80vh;
+}
+
+#menuheading ,h1{
+    text-align: center;
+    background:rgba(100,100,100,.8);
+    color:var(--red);
+
+}
+
+.menu th{
+    color:var(--green);
+    font-size:1.8em;
 }
