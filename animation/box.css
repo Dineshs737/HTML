@@ -1,0 +1,55 @@
+body{
+    background-color: aqua;
+}
+
+.box{
+    width:200px;
+    height:200px;
+    background-color:cornflowerblue;
+    animation-name:boxcolor-animation; /*animation name*/
+    animation-duration: 6s;/*animation time */
+    /* transition: transform 8s ease-in-out 2s; */
+    position: relative;
+    left:50px;
+    top:50px;
+}
+
+@keyframes box-animation {
+    from { /* from 0%  and to 100% */
+        background-color: yellowgreen;
+       
+    }
+    to {background-color: cornflowerblue;}
+}
+
+/* create boxcolor-animation*/
+
+@keyframes boxcolor-animation{
+    20%{
+        background-color: crimson;
+        left:50px;
+        top:20px;;
+        
+    }
+    40%{
+        background-color:blueviolet;
+        left:600px;
+        top:300px;;
+    }
+    60%{
+        background-color: darkmagenta;
+        left:150px;
+        top:300px;;
+    }
+
+    80%{
+        background-color: violet;
+        left:-10px;
+        top:300px;;
+        /* transform: translateX(300px) translateY(300px) scale(3) skewX(10deg); */
+    }
+
+    100%{
+        background-color: cornflowerblue;
+    }
+}

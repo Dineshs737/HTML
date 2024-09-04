@@ -1,0 +1,18 @@
+.plane img{
+    /* background-image: url("./plane.png"); */
+    /* height:400px; */
+    width:200px;
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* transform:translate(100px 100px); */
+    /* transform: translateX(); */
+   /* / transform: scale(2); */
+    /* transform:matrix() */
+    transition:transform 6s ease;
+}
+
+.plane img:hover{
+   transform:translateX(800px) translateY(600px) rotate(30deg) scale(1.5);
+   /* transform: scale(2); */
+}
