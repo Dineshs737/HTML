@@ -12,6 +12,9 @@ body{
     position: relative;
     left:50px;
     top:50px;
+    animation-delay:1s;
+    /* animation-direction:alternate; */
+    animation-timing-function:ease-in;
 }
 
 @keyframes box-animation {

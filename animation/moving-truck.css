@@ -1,0 +1,63 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+
+}
+.sky{
+    background-color: skyblue;
+    height:50vh;
+}
+
+.truck img{
+    position:absolute;
+    top:500px;
+    animation-name:truck-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+body{
+    overflow: hidden;
+}
+
+@keyframes truck-animation {
+from{
+    transform:translateX(-300px);
+}    
+to{
+    transform:translateX(105vw);
+}
+}
+
+.smallCloud{
+    position:absolute;
+    right:-300px;
+    top:40px;
+}
+
+.largeCloud{
+    position:absolute;
+    right:-100px;
+    top:200px;
+    animation-name: LargeCloud-animation;
+    animation-duration:70s;
+    
+}
+
+@keyframes LargeCloud-animation{
+    form{
+        top:200px;
+        right:-100px;
+       /* / transform: scale(1); */
+
+    }
+
+    to{
+        top:200px;
+        left:0px;
+        /* transform: scale(1.5); */
+
+    }
+}
