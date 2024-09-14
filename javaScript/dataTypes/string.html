@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string in javascript</title>
+</head>
+<body>
+    
+    <p>
+
+    </p>
+
+    <script> <!-- write javascript string data types and basic functions -->
+    let name  = "dinesh" //storing text value dinesh
+    let message = 'hello'// hello message  
+    let  text = `This is me and I love Javascript` // template string
+        // template string allow multi line strings
+    //find string length property
+    const name_length = name.length;
+
+    let add_messageAndName = message +"\t"+ name; //add string values togther
+    console.log(add_messageAndName);
+    
+
+
+    console.log(name_length);
+
+    document.querySelector("p").innerHTML = `Name is ${name} and legnth of this Name is ${name_length} chareacters`
+
+    /*
+code    result      Description
+\'	     '	        Single quote
+\"	    "	        Double quote
+\\      \	        Backslash
+    
+    
+    */
+
+    // create string using string objects
+
+    let x = new String("hello World");
+
+    console.log(x);
+
+
+    </script>
+</body>
+</html>
